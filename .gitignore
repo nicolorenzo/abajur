@@ -13,3 +13,4 @@ phpmailer/secret.php
 _gh_pages
 _site
 node_modules
+sendgrid

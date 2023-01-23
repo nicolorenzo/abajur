@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // portfolio: '',
   };
 
-  let events = ['input', 'blur'];
+  let events = ['input', 'focus', 'blur'];
 
   events.forEach((event) => {
     inputs.forEach((input) => {
@@ -126,10 +126,9 @@ document.addEventListener('DOMContentLoaded', () => {
       input.parentElement.classList.remove('valid');
     }
     input.value = input.value.trim();
-
-    // if ((input.name = 'telefone')) {
-    //   input.value = input.value.replace(/\D/g, '');
-    // }
+    if (input.name == 'telefone') {
+      input.value = input.value.replace(/\D/g, '');
+    }
     console.log(formData);
     sendData(formData);
   }

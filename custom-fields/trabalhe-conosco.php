@@ -8,7 +8,7 @@
       'object_types' => ['page'],
       'show_on' => [
         'key' => 'page-template',
-        'value' => 'page-trabalhe-concosco.php'
+        'value' => 'page-trabalhe-conosco.php'
       ],
     ]);
 

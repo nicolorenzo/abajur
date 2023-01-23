@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+// Importing the initial variables
+@import '../node_modules/bulma/sass/utilities/initial-variables';
+
+* {
+  scroll-behavior: smooth;
+}
+// Cores
+$primary: $black;
+$link: #0057ff;
+$body-background-color: #dadada;
+
+// Fontes
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+    url('../fonts/monumentextended-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Monument Extended';
+  src: url('../fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+    url('../fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+$family-primary: 'Monument Extended', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+$family-secondary: 'Montserrat', sans-serif;
+
+// Tipografia
+h1,
+h2,
+h3,
+.button,
+.navbar a {
+  font-family: $family-primary;
+}
+
+// Import the rest of Bulma
+@import '../node_modules/bulma/bulma';
+
+//Fonte
+body {
+  font-family: $family-secondary;
+  line-height: 1.2;
+}
+
+//Helpers
+.animate {
+  transition: all ease 0.5s;
+}
+
+// Botões e links
+.button .icon:last-child:not(:first-child) {
+  margin-right: calc(-0.25em - 1px);
+}
+.button .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+#whatsapp-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  padding: 2em 1.5em;
+  z-index: 99999;
+}
+
+// Menu
+.nav-up {
+  transform: translateY(-100%);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.menu a {
+  color: $white;
+}
+
+// Portfólio
+.grid {
+  column-count: 1;
+  column-gap: 1em;
+}
+.card {
+  display: inline-block;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 2em;
+}
+.card .icon-text {
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+.card picture {
+  border-radius: 1em;
+  overflow: hidden;
+  display: block;
+}
+.card img {
+  display: block;
+  width: 100%;
+}
+.selo {
+  position: absolute;
+  margin: 0 1em;
+  padding-top: 1em;
+  width: calc(100% - 2em);
+}
+.selo img {
+  max-width: 60px;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+.selo button {
+  float: right;
+}
+.swiper .selo img {
+  right: 0;
+  max-width: 80px;
+}
+
+// Trabalhe conosco
+#trabalhe-conosco {
+  background: $link url(../images/trabalhe-conosco-bg.jpg) center center/cover
+    no-repeat;
+  padding-top: 15em;
+}
+
+// Swiper
+.row-swiper {
+  gap: 1em;
+}
+.swiper-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.swiper-pagination-bullet {
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 0;
+  flex-grow: 1;
+  max-width: 10rem;
+}
+.swiper-slide {
+  justify-content: center;
+  display: flex;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 0;
+  position: unset;
+  margin-top: unset;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2em;
+}
+
+// Footer
+footer ul.menu {
+  display: block;
+}
+footer .menu li {
+  padding: 0 0 1em;
+}
+footer .menu a {
+  font-family: 'Monument Extended';
+  font-size: 1em;
+}
+.map {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+// Página Sobre
+.intro {
+  padding-left: 1em;
+  border-left: 5px solid $primary;
+}
+
+// Página Contato
+.contato-icons {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+.contato-icons .icon-text {
+  flex-wrap: nowrap;
+  margin-bottom: 1.5em;
+  line-height: 1.2;
+  align-items: center;
+}
+.contato-icons .icon-text .icon {
+  margin-right: 0.8em;
+}
+.contato-icons img {
+  width: 1em;
+  height: 1em;
+  font-size: 2em;
+}
+.textarea,
+.input,
+.textarea::placeholder,
+.input::placeholder {
+  font-family: $family-secondary;
+  background-color: transparent !important;
+  border: 1px solid $grey;
+  color: $grey !important;
+  border-radius: 1.5em !important;
+}
+.field {
+  display: flex;
+  align-items: center;
+}
+.field.not-valid::after,
+.field.valid::after {
+  position: absolute;
+  display: block;
+  width: 1em;
+  height: 1em;
+  right: 0.5em;
+}
+.field.not-valid::after {
+  content: '🗙';
+  color: $danger;
+}
+.field.valid::after {
+  content: '✔';
+  color: $success;
+}
+.field .placeholder {
+  position: absolute;
+}
+
+// Página Case
+.section.case {
+  padding: 0;
+  padding-bottom: 4rem;
+}
+.case-columns {
+  max-width: 1152px;
+}
+.case-column {
+  padding: 3rem 2.3rem;
+  padding-bottom: 0;
+}
+.swiper-slide img,
+.swiper-slide picture {
+  width: 100%;
+}
+.touch-icon {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+  z-index: 1;
+}
+.touch-icon img {
+  width: 4em;
+}
+
+//Vídeo
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Touch
+@include touch {
+  //Menu
+  header {
+    padding-top: 6rem;
+  }
+  .navbar-menu {
+    display: block;
+    position: fixed;
+    right: -100vw;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100% !important;
+  }
+  .navbar-menu.open {
+    right: 0;
+  }
+  .navbar-burger {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: unset;
+    width: unset;
+    padding: 1rem 0.75rem;
+  }
+  .navbar-burger.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    width: fit-content;
+  }
+  nav .menu {
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 1rem 0.75rem;
+  }
+}
+
+// Mobile
+@include mobile {
+  // #portfolio .button {
+  //   width: 100%;
+  //   max-width: 100%;
+  //   font-size: .9em;
+  //   padding: 2em 1em;
+  // }
+}
+
+// Tablet
+@include tablet {
+  // Página Contato
+  .contato-icons {
+    margin-top: 0;
+  }
+}
+
+// Tablet only
+@include tablet-only {
+  // Portfólio
+  .grid {
+    column-count: 2;
+  }
+}
+
+// Desktop
+@include desktop {
+  html {
+    font-size: 18px;
+  }
+
+  // Portfólio
+  .grid {
+    column-count: 3;
+  }
+
+  // Página Case
+  .section.case {
+    padding: 9rem 4.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .case-columns {
+    max-width: 960px;
+  }
+  .case-column {
+    padding: 0.75rem;
+  }
+
+  // Footer
+  footer .navbar-end {
+    display: block;
+  }
+}
+
+// Widescreen
+@include widescreen {
+  .case-columns {
+    max-width: 1344px;
+  }
+}

@@ -23,3 +23,5 @@
   rel="stylesheet"
   href="<?php echo get_stylesheet_directory_uri() ?>/css/main.css"
 />
+<!-- Recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

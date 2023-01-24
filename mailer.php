@@ -23,26 +23,43 @@
   $email->SMTPSecure = "tls";
   $email->Port ="587";
   $email->Username = "nicolorenzo.abajur@gmail.com";
-  $email->Password = $secret;
+  $email->Password = $secret_mail;
   $email->Subject = "Contato Site - Trabalhe Conosco";
   $email->isHTML(true);
   $email->CharSet = 'UTF-8';
   $email->setFrom("nicolorenzo.abajur@gmail.com");
-  
   $email->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
-
   $email->Body = '<p>Nome: '.$nome.'</p><p>E-mail: '.$form_email.'</p><p>Telefone: '.$telefone.'</p><p>LinkedIn: '.$linkedin.'</p><p>Mensagem: '.$mensagem.'</p><p>Portfólio: '.$portfolio.'</p>';
   $email->addAddress("nicolorenzo@live.com");
+
+  $captcha = $_POST['g-recaptcha-response'];
+  
   if(isset($_POST['submit'])) {
-    if($email->Send()){
-      $alert = '<div class="notification is-success">
-        <button class="delete"></button>
-        E-mail enviado com sucesso!
-      </div>';
-    }else{
-      $alert = '<div class="notification is-danger">
-        <button class="delete"></button>'.$email->ErrorInfo.'</div>';
-    }
+      $res = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret_recaptcha."&response=".$captcha."&remoteip=".$_SERVER["REMOTE_ADDR"]));
+      if($res->success) {
+        if($email->Send()){
+          $alert = '<div class="notification is-success">
+            Enviado com sucesso!
+          </div>';
+        }else{
+          $alert = '<div class="notification is-danger">
+            '.$email->ErrorInfo.'</div>';
+        }
+      } else {
+        $alert = '<div class="notification is-danger">'.
+          'Confirme que você não é um robô!'.'
+        </div>';
+      }
+    // if($email->Send()){
+    //   $alert = '<div class="notification is-success">
+    //     <button class="delete"></button>
+    //     E-mail enviado com sucesso!
+    //   </div>';
+    // }else{
+    //   $alert = '<div class="notification is-danger">
+    //     <button class="delete"></button>'.$email->ErrorInfo.'</div>';
+    // }
+    
   }
   $email->smtpClose();
 

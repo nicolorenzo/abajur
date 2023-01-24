@@ -8,13 +8,24 @@
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\SMTP;
   use PHPMailer\PHPMailer\Exception;
-  
-  $mensagem = $_POST['mensagem'];
-  $nome = $_POST['nome'];
-  $form_email = $_POST['email'];
-  $telefone = $_POST['telefone'];
-  $linkedin = $_POST['linkedin'];
-  $portfolio = $_POST['portfolio'];
+
+  function message() {
+    $mensagem = $_POST['mensagem'];
+    $nome = $_POST['nome'];
+    $form_email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $linkedin = $_POST['linkedin'];
+    $portfolio = $_POST['portfolio'];
+    $empresa = $_POST['empresa'];
+    $fields = array("Mensagem"=>$mensagem, "Nome"=>$nome, "E-mail"=>$form_email, "Telefone"=>$telefone, "LinkedIn"=>$linkedin, "Portfólio"=>$portfolio, "Empresa"=>$empresa) ;
+    $message = '';
+    foreach ($fields as $field=>$field_value){
+      if(!empty($field_value)){
+        $message .= "<p>{$field}: {$field_value}</p>";
+      };
+    };
+    return $message;
+  };
 
   $email = new PHPMailer();
   $email->isSMTP();
@@ -22,15 +33,15 @@
   $email->SMTPAuth = "true";
   $email->SMTPSecure = "tls";
   $email->Port ="587";
-  $email->Username = "nicolorenzo.abajur@gmail.com";
+  $email->Username = get_field('email_from');
   $email->Password = $secret_mail;
-  $email->Subject = "Contato Site - Trabalhe Conosco";
+  $email->Subject = get_field('assunto');
   $email->isHTML(true);
   $email->CharSet = 'UTF-8';
-  $email->setFrom("nicolorenzo.abajur@gmail.com");
+  $email->setFrom(get_field('email_from'));
   $email->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
-  $email->Body = '<p>Nome: '.$nome.'</p><p>E-mail: '.$form_email.'</p><p>Telefone: '.$telefone.'</p><p>LinkedIn: '.$linkedin.'</p><p>Mensagem: '.$mensagem.'</p><p>Portfólio: '.$portfolio.'</p>';
-  $email->addAddress("nicolorenzo@live.com");
+  $email->Body = message();
+  $email->addAddress(get_field('email_to'));
 
   $captcha = $_POST['g-recaptcha-response'];
   

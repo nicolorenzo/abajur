@@ -1,64 +1,73 @@
 <?php
 // Template Name: Contato
 ?>
+<?php include 'mailer.php'; ?>
 <?php get_header() ?>
     <header class="section has-background-white is-medium">
       <div class="container">
         <h1 class="title has-text-weight-normal is-size-4 has-text-black mb-4">
-          Precisando de ajuda? Entre em contato.
+          <?php the_field('titulo') ?>
         </h1>
         <p class="is-size-6 intro">
-          Preencha o formulário e deixe sua mensagem. Ou entre em contato
-          através das redes abaixo.
+        <?php the_field('sub_titulo') ?>
         </p>
       </div>
     </header>
     <section class="section is-medium">
       <div class="container">
         <div class="columns">
-          <div class="column">
-            <form action="">
+        <div class="column">
+            <?php echo $alert; ?>
+            <form action="" method="POST" enctype="multipart/form-data">
+              <label for="mensagem">Mensagem</label>
               <div class="field">
                 <textarea
                   class="textarea"
                   name="mensagem"
-                  placeholder="Mensagem"
+                  placeholder="Digite sua mensagem"
                 ></textarea>
               </div>
-              <div class="field">
+              <label for="nome">Nome</label>
+              <div class="field form-control">
                 <input
                   name="nome"
                   class="input"
                   type="text"
-                  placeholder="Nome"
+                  placeholder="Digite seu nome" minlength="6" required
                 />
               </div>
-              <div class="field">
+              <label for="email">E-mail</label>
+              <div class="field form-control">
                 <input
                   name="email"
                   class="input"
                   type="email"
-                  placeholder="E-mail"
+                  placeholder="Digite um e-mail válido" required
                 />
               </div>
-              <div class="field">
+              <label for="telefone">Telefone</label>
+              <div class="field form-control">
                 <input
                   name="telefone"
                   class="input"
                   type="tel"
-                  placeholder="Telefone"
+                  placeholder="Telefone com DDD" required pattern="^[0-9]{10,}"
                 />
               </div>
-              <div class="field">
+              <label for="empresa">Empresa</label>
+              <div class="field form-control">
                 <input
                   name="empresa"
                   class="input"
                   type="text"
-                  placeholder="Empresa"
+                  placeholder="Nome da sua empresa"
                 />
               </div>
               <div class="field">
-                <button class="button is-small is-rounded is-link">
+                <div class="g-recaptcha" data-sitekey="<?php the_field('client_key') ?>"></div>
+              </div>
+              <div class="field">
+                <button type="submit" name="submit" class="button is-small is-rounded is-link" disabled>
                   Enviar
                 </button>
               </div>
@@ -88,7 +97,7 @@
               <span class="icon">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/local-icon.svg" alt="" />
               </span>
-              <span>R. 24 de Outubro, 1611 11º andar - Auxiliadora</span>
+              <span>R. 24 de Outubro, 1611, 11º andar - Auxiliadora</span>
             </span>
             <a
               href="https://www.instagram.com/abajurpropaganda/"

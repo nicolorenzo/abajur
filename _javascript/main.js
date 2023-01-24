@@ -90,14 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Formulário
-  let inputs = document.querySelectorAll('.form-control input');
+  let inputs = document.querySelectorAll('.form-control *:required');
   let submitButton = document.querySelector('button[type="submit"]');
 
   let formData = {
     nome: '',
     email: '',
     telefone: '',
-    linkedin: '',
+    // linkedin: '',
     // portfolio: '',
   };
 

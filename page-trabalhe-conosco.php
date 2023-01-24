@@ -82,7 +82,7 @@
                 <input style="display:none" type="file" name="file" id="file" />
               </div>
               <div class="field">
-                <div class="g-recaptcha" data-sitekey="6LdIDyMkAAAAAGYZMCfIPr0yrkPvdCahBYVcBACY"></div>
+                <div class="g-recaptcha" data-sitekey="<?php the_field('client_key') ?>"></div>
               </div>
               <div class="field">
                 <button type="submit" name="submit" class="button is-small is-rounded is-link" disabled>

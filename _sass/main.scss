@@ -151,7 +151,7 @@ body {
 .swiper-pagination-bullet {
   width: 3rem;
   height: 0.4rem;
-  border-radius: 0;
+  border-radius: 0 !important ;
   flex-grow: 1;
   max-width: 10rem;
 }
@@ -273,6 +273,12 @@ footer .menu a {
 }
 .touch-icon img {
   width: 4em;
+}
+.content h2:not(:first-child) {
+  margin-top: 0;
+}
+.content h3 {
+  margin-bottom: 0;
 }
 
 //Vídeo

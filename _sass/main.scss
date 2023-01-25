@@ -228,6 +228,7 @@ footer .menu a {
 .field {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .field.not-valid::after,
 .field.valid::after {

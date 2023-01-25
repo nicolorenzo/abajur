@@ -18,33 +18,8 @@
       </div>
     </header>
     
-    <section class="section case is-medium">
-      <div class="case-columns columns is-multiline">
-        <div class="column is-full is-half-desktop">
-            <div class="swiper case">
-              <div class="selo">
-                <img src="<?php the_field('case_selo') ?>" alt="" />
-              </div>
-              <div class="swiper-wrapper">
-                    <?php 
-                      $slider = get_field('carrossel');
-                      if(isset($slider)) {
-                        foreach($slider as $imagem) {
-                    ?>
-                          <div class="swiper-slide">
-                            <img src="<?php echo $imagem['imagem'] ?>" />     
-                          </div>
-                    <?php 
-                        }
-                      }
-                    ?>
-              </div>
-              <div class="row touch-icon is-flex is-justify-content-center">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/touch-icon.svg" alt="" />
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-        </div>
+    <section class="section is-medium">
+      <div class="container content">
         <?php 
               if(have_posts()) {
                 while(have_posts()) {

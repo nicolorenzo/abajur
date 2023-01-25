@@ -14,7 +14,7 @@
 </header>
 <section id="sobre" class="section is-medium">
   <div class="container content">
-    <div class="columns is-flex-wrap-wrap">
+    <!-- <div class="columns is-flex-wrap-wrap">
       <div class="column is-full is-half-widescreen">
           <div class="swiper sobre">
             <div class="swiper-wrapper">
@@ -37,7 +37,8 @@
             <div class="swiper-pagination"></div>
           </div>
       </div>
-        <?php 
+    </div> -->
+    <?php 
           if(have_posts()) {
             while(have_posts()) {
               the_post();
@@ -45,19 +46,6 @@
             }
           }
         ?>
-        <!-- <?php 
-              $paragrafos = get_field('paragrafos');
-              if(isset($paragrafos)) {
-                foreach($paragrafos as $paragrafo) {
-            ?>
-        <p>
-          <?php echo $paragrafo['paragrafo'] ?>
-        </p>
-        <?php 
-                }
-              }
-            ?> -->
-    </div>
   </div>
 </section>
 

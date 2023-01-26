@@ -50,3 +50,8 @@
 </section>
 
 <?php get_footer() ?>
+<script type='text/javascript'>
+          let swiper_container= document.querySelector('.swiper-container');
+          swiper_container.insertAdjacentHTML('beforeend', '<div class="row touch-icon is-flex is-justify-content-center"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/touch-icon.svg" alt="" /></div>');
+
+        </script>

@@ -126,7 +126,10 @@ body {
 .selo button {
   float: right;
 }
-.swiper .selo img {
+.elementor .selo {
+  top: 0;
+}
+.elementor .selo img {
   right: 0;
   max-width: 80px;
 }

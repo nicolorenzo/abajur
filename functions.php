@@ -18,6 +18,9 @@
   //Shortcodes
   include('custom-shortcodes.php');
 
+  // SEO
+  include('custom-fields/seo.php');  
+  
   // Funções CMB2
   include('custom-fields/functions.php');
 

@@ -40,7 +40,7 @@
   include('custom-fields/sobre.php');
 
   // Página Contato
-  include('custom-fields/contato.php');
+  // include('custom-fields/contato.php');
 
   // Página Trabalhe Conosco
   include('custom-fields/trabalhe-conosco.php');

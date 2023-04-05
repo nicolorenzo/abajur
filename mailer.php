@@ -34,7 +34,7 @@
   $email->SMTPSecure = "tls";
   $email->Port ="587";
   $email->Username = get_field('email_from');
-  $email->Password = $secret_mail;
+  $email->Password = get_field('email_secret');
   $email->Subject = get_field('assunto');
   $email->isHTML(true);
   $email->CharSet = 'UTF-8';
@@ -46,7 +46,7 @@
   $captcha = $_POST['g-recaptcha-response'];
   
   if(isset($_POST['submit'])) {
-      $res = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret_recaptcha."&response=".$captcha."&remoteip=".$_SERVER["REMOTE_ADDR"]));
+      $res = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".get_field('server_key')."&response=".$captcha."&remoteip=".$_SERVER["REMOTE_ADDR"]));
       if($res->success) {
         if($email->Send()){
           $alert = '<div class="notification is-success">

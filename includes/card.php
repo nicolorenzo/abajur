@@ -2,7 +2,7 @@
   $cases = get_field('cases');
   if(get_the_ID() == get_page_by_title('Início')->ID) {
     $cases = get_field('cases', get_page_by_title('Portfólio')->ID);
-    $firstThreeElements = array_slice($cases, 0, 3);
+    $firstThreeElements = array_slice($cases, 0, 6);
     $cases = $firstThreeElements;
   };
   if(isset($cases)) {
@@ -15,11 +15,11 @@
           <img src="<?php echo $case['case_selo'] ?>" alt="">
         <?php
         } ?>
-        <?php if(isset($case['case_status'])) { ?> 
+        <?php if(!empty($case['case_status'])) { ?> 
           <button class="button is-rounded is-small is-black">
-            <span>
+            
               <?php echo $case['case_status'] ?>
-            </span>
+            
           </button>
         <?php
         } ?>

@@ -3,25 +3,31 @@
     <div class="columns">
       <div class="column">
         <img
-          class="mb-5"
+          class="mb-5 logo"
           src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.svg"
           alt=""
         />
-        <?php include 'nav-end.php' ?>
+          <span class="icon-text">
+            <span class="icon mr-3">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/images/local-icon-white.svg" alt="" />
+            </span>
+            <span class="has-text-white">R. 24 de Outubro, 1611, 11º andar - Porto Alegre/RS - Brasil</span>
+          </span>
+          <div class="mt-6 mb-6">
+            <a class="button is-link is-medium mr-3" href="https://www.instagram.com/abajurpropaganda/" target="_blank">
+              <span class="icon is-medium">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/instagram-icon-white.svg" alt="" />
+              </span>
+            </a>
+            <a class="button is-link is-medium" href="https://www.linkedin.com/company/abajur" target="_blank">
+              <span class="icon is-medium">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/linkedin-icon-white.svg" alt="" />
+              </span>
+            </a>
+          </div>          
       </div>
       <div class="column">
-        <div class="map">
-          <iframe
-            width="100%"
-            height="300"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=abajur%20propaganda&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-        </div>
+        <?php include 'nav-end.php' ?>
       </div>
     </div>
   </div>

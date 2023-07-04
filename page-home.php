@@ -47,7 +47,7 @@
       href="portfolio"
       class="button is-link is-rounded is-medium has-text-weight-bold"
     >
-      <span>Ver portfólio completo</span>
+      <span>Ver portfolio completo</span>
     </a>
   </div>
 </section>

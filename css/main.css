@@ -10471,8 +10471,22 @@ body {
   font-size: 2em;
 }
 
+footer .logo {
+  display: block;
+}
+
+footer .icon-text {
+  flex-wrap: unset;
+  align-items: center;
+}
+
+footer .icon-text .icon {
+  height: unset;
+}
+
 footer ul.menu {
   display: block;
+  text-align: right;
 }
 
 footer .menu li {
@@ -10526,9 +10540,13 @@ footer .menu a {
 .input::placeholder {
   font-family: "Montserrat", sans-serif;
   background-color: transparent !important;
-  border: 1px solid hsl(0deg, 0%, 48%);
   color: hsl(0deg, 0%, 48%) !important;
   border-radius: 1.5em !important;
+}
+
+.textarea,
+.input {
+  border: 1px solid hsl(0deg, 0%, 48%);
 }
 
 .field {
@@ -10547,7 +10565,7 @@ footer .menu a {
 }
 
 .field.not-valid::after {
-  content: "🗙";
+  content: "✘";
   color: hsl(348deg, 86%, 61%);
 }
 
@@ -10653,6 +10671,11 @@ footer .menu a {
     font-size: 2rem;
     line-height: 1;
     padding: 1rem 0.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer ul.menu {
+    text-align: left;
   }
 }
 @media screen and (min-width: 769px), print {

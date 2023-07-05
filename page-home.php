@@ -30,8 +30,11 @@
           />
         </a>
       </div>
-    </div>
+    </div>    
   </div>
+  <video id="background-video" autoplay loop muted>
+    <source src="<?php the_field('video_bg') ?>" type="video/mp4">
+  </video>
 </header>
 <section id="portfolio" class="section is-medium">
   <div class="container">

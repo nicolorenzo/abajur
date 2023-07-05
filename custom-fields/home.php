@@ -13,6 +13,15 @@
     ]);
 
     $cmb->add_field([
+      'name' => 'Video background',
+      'id' => 'video_bg',
+      'type' => 'file',
+      'options' => [
+        'url' => false
+      ]
+    ]);
+
+    $cmb->add_field([
       'name' => 'Texto Cabeçalho',
       'id' => 'texto_h1',
       'type' => 'textarea',

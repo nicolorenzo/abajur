@@ -10492,6 +10492,10 @@ header .container {
   font-size: 2em;
 }
 
+.swiper {
+  width: 90%;
+}
+
 footer .logo {
   display: block;
 }

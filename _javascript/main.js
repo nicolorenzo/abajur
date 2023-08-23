@@ -125,7 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
       input.parentElement.classList.add('not-valid');
       input.parentElement.classList.remove('valid');
     }
-    input.value = input.value.trim();
+    if (input.name !== 'nome') {
+      input.value = input.value.trim();
+    }
     if (input.name == 'telefone') {
       input.value = input.value.replace(/\D/g, '');
     }

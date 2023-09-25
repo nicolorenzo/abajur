@@ -74,6 +74,24 @@
             </form>
           </div>
           <div class="column contato-icons">
+            <div class="map mb-5">
+              <iframe
+                width="100%"
+                height="300"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=abajur%20propaganda&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+            <span class="icon-text">
+              <span class="icon">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/local-icon.svg" alt="" />
+              </span>
+              <span>R. 24 de Outubro, 1611, 11º andar - Porto Alegre/RS - Brasil</span>
+            </span>
             <a
               href="mailto:contato@abajurpropaganda.com.br"
               target="_blank"
@@ -89,15 +107,8 @@
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/phone-icon.svg" alt="" />
               </span>
               <span
-                >(51) 99641-8491 <br />
-                (51) 99323-5484</span
+                >(51) 99641-8491</span
               >
-            </span>
-            <span class="icon-text">
-              <span class="icon">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/local-icon.svg" alt="" />
-              </span>
-              <span>R. 24 de Outubro, 1611, 11º andar - Auxiliadora</span>
             </span>
             <a
               href="https://www.instagram.com/abajurpropaganda/"

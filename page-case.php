@@ -12,7 +12,7 @@
             <?php the_field('premio') ?>
           </p>
           <p class="is-size-6">
-            Cliente: <?php the_field('cliente') ?>
+            <?php the_field('cliente') ?>
           </p>
         </div>
       </div>

@@ -1,9 +1,10 @@
 <?php
+  error_reporting(E_ERROR | E_PARSE);
   require 'PHPMailer/src/Exception.php';
   require 'PHPMailer/src/PHPMailer.php';
   require 'PHPMailer/src/SMTP.php';
 
-  include 'PHPMailer/secret.php';
+  // include 'PHPMailer/secret.php';
   
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\SMTP;

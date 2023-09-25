@@ -25,7 +25,7 @@
     ]);
     
     $cmb->add_field([
-      'name' => 'Cliente',
+      'name' => 'Subtítulo',
       'id' => 'cliente',
       'type' => 'text',
     ]);

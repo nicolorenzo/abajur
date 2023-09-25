@@ -83,6 +83,26 @@ body {
   color: $white;
 }
 
+// Início
+header {
+  position: relative;
+}
+header .container {
+  z-index: 1;
+}
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
 // Portfólio
 .grid {
   column-count: 1;
@@ -174,8 +194,20 @@ body {
 }
 
 // Footer
+
+footer .logo {
+  display: block;
+}
+footer .icon-text {
+  flex-wrap: unset;
+  align-items: center;
+}
+footer .icon-text .icon {
+  height: unset;
+}
 footer ul.menu {
   display: block;
+  text-align: right;
 }
 footer .menu li {
   padding: 0 0 1em;
@@ -222,11 +254,14 @@ footer .menu a {
 .input,
 .textarea::placeholder,
 .input::placeholder {
-  font-family: $family-secondary;
+  font-family: 'Montserrat', sans-serif;
   background-color: transparent !important;
-  border: 1px solid $grey;
-  color: $grey !important;
+  color: hsl(0deg, 0%, 48%) !important;
   border-radius: 1.5em !important;
+}
+.textarea,
+.input {
+  border: 1px solid hsl(0deg, 0%, 48%);
 }
 .field {
   display: flex;
@@ -242,7 +277,7 @@ footer .menu a {
   right: 0.5em;
 }
 .field.not-valid::after {
-  content: '🗙';
+  content: '✘';
   color: $danger;
 }
 .field.valid::after {
@@ -348,6 +383,11 @@ footer .menu a {
   //   font-size: .9em;
   //   padding: 2em 1em;
   // }
+
+  // Footer
+  footer ul.menu {
+    text-align: left;
+  }
 }
 
 // Tablet

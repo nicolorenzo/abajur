@@ -7,4 +7,5 @@
     <?php wp_head() ?>
   </head>
   <body>
+    <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
     <?php include 'includes/nav.php' ?>

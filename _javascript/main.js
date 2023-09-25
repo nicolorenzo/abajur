@@ -52,15 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       375: {
         spaceBetween: 10,
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       768: {
         spaceBetween: 20,
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
       1024: {
         spaceBetween: 40,
-        slidesPerView: 4,
+        slidesPerView: 6,
       },
     },
   });
@@ -125,7 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
       input.parentElement.classList.add('not-valid');
       input.parentElement.classList.remove('valid');
     }
-    input.value = input.value.trim();
+    if (input.name !== 'nome') {
+      input.value = input.value.trim();
+    }
     if (input.name == 'telefone') {
       input.value = input.value.replace(/\D/g, '');
     }

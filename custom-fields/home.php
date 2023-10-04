@@ -56,6 +56,15 @@
     ]);
 
     $cmb->add_field([
+      'name' => 'Background Seção Trabalhe Conosco',
+      'id' => 'trabalhe-conosco_bg',
+      'type' => 'file',
+      'options' => [
+        'url' => false
+      ]
+    ]);
+
+    $cmb->add_field([
       'name' => 'Texto Seção Trabalhe Conosco',
       'id' => 'texto_trabalhe_conosco',
       'type' => 'text',

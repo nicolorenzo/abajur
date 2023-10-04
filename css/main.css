@@ -10452,8 +10452,25 @@ header .container {
 }
 
 #trabalhe-conosco {
-  background: #0057ff url(../images/trabalhe-conosco-bg.jpg) center center/cover no-repeat;
+  background: #0057ff center center/cover no-repeat;
   padding-top: 15em;
+  position: relative;
+}
+
+#trabalhe-conosco .container {
+  z-index: 10;
+}
+
+#trabalhe-conosco:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: 0.4;
+  z-index: 0;
 }
 
 .row-swiper {

@@ -55,7 +55,7 @@
   </div>
 </section>
 
-<section id="trabalhe-conosco" class="section is-medium has-text-centered">
+<section id="trabalhe-conosco" class="section is-medium has-text-centered"  style="background-image: url(<?php the_field('trabalhe-conosco_bg')?>)">
   <div class="container">
     <h2 class="title is-size-4 has-text-white"><?php the_field('texto_trabalhe_conosco') ?></h2>
     <a href="trabalhe-conosco" class="button is-white is-rounded">

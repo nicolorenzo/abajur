@@ -2,9 +2,11 @@
   $cases = get_field('cases');
   if(get_the_ID() == get_page_by_title('Início')->ID) {
     $cases = get_field('cases', get_page_by_title('Portfólio')->ID);
-    $firstThreeElements = array_slice($cases, 0, 6);
-    $cases = $firstThreeElements;
+  } elseif (get_the_ID() == get_page_by_title('Home')->ID) {
+    $cases = get_field('cases', url_to_postid(' http://localhost/abajur/en/portfolio/'));
   };
+  $firstSixElements = array_slice($cases, 0, 6);
+  $cases = $firstSixElements;
   if(isset($cases)) {
     foreach($cases as $case) {
 ?> 

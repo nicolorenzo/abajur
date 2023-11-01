@@ -1,11 +1,20 @@
 <div class="navbar-end">
 <?php
-					$args = array(
-						'menu' => 'principal',
-						'container' => false
-					);
-					wp_nav_menu( $args );
-				?>
+	$menu_pt = 'Menu';
+	$menu_en = 'Menu ingles';
+
+	if (strpos($_SERVER['REQUEST_URI'], '/en') == false) {
+		$menu = $menu_pt;
+	} else {
+		$menu = $menu_en;
+	}
+
+	$args = array(
+		'menu' => $menu,
+		'container' => false
+	);
+	wp_nav_menu( $args );
+?>
   <!-- <a href="./" class="navbar-item"> Início </a>
   <a href="sobre.php" class="navbar-item"> Sobre </a>
   <a href="portfolio.php" class="navbar-item"> Portfólio </a>

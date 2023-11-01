@@ -24,9 +24,14 @@
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/linkedin-icon-white.svg" alt="" />
               </span>
             </a>
-            <a class="button is-link is-medium" href="https://www.tiktok.com/@abajur.propaganda" target="_blank">
+            <a class="button is-link is-medium  mr-3" href="https://www.tiktok.com/@abajur.propaganda" target="_blank">
               <span class="icon is-medium">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/tiktok-icon-white.svg" alt="" />
+              </span>
+            </a>
+            <a class="button is-link is-medium" href="https://www.youtube.com/@abajurpropaganda" target="_blank">
+              <span class="icon is-medium">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/youtube-icon-white.svg" alt="" />
               </span>
             </a>
           </div>          

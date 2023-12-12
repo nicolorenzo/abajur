@@ -4,11 +4,12 @@
     $cases = get_field('cases', get_page_by_title('Portfólio')->ID);
     $firstSixElements = array_slice($cases, 0, 6);
     $cases = $firstSixElements;
-  } elseif (get_the_ID() == get_page_by_title('Home')->ID) {
-    $cases = get_field('cases', url_to_postid(' http://localhost/abajur/en/portfolio/'));
+  } /* elseif (get_the_ID() == get_page_by_title('Home')->ID) {
+    $url = get_url().'/en/portfolio';
+    $cases = get_field('cases', url_to_postid($url));
       $firstSixElements = array_slice($cases, 0, 6);
       $cases = $firstSixElements;
-  };
+  }; */
   if(isset($cases)) {
     foreach($cases as $case) {
 ?> 

@@ -79,7 +79,7 @@
                 width="100%"
                 height="300"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=abajur%20propaganda&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.062950094737!2d-51.20345902351833!3d-30.035051830842775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519784a72d3fd4f%3A0xb0542a16b7a1cb90!2sR.%20Dona%20Leonor%2C%20415%20-%20Rio%20Branco%2C%20Porto%20Alegre%20-%20RS%2C%2090420-180%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1727727988169!5m2!1spt-BR!2sus"
                 frameborder="0"
                 scrolling="no"
                 marginheight="0"
@@ -90,7 +90,7 @@
               <span class="icon">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/local-icon.svg" alt="" />
               </span>
-              <span>R. 24 de Outubro, 1611, 11º andar - Porto Alegre/RS - Brasil</span>
+              <span>R. Dona Leonor, 415 - Rio Branco - Porto Alegre/RS - Brasil</span>
             </span>
             <a
               href="mailto:contato@abajurpropaganda.com.br"

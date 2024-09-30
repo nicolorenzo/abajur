@@ -11,7 +11,7 @@
             <span class="icon mr-3">
               <img src="<?php echo get_stylesheet_directory_uri() ?>/images/local-icon-white.svg" alt="" />
             </span>
-            <span class="has-text-white">R. 24 de Outubro, 1611, 11º andar - Porto Alegre/RS - Brasil</span>
+            <span class="has-text-white">Rua Dona Leonor 415 - Porto Alegre</span>
           </span>
           <div class="mt-6 mb-6">
             <a class="button is-link is-medium mr-3" href="https://www.instagram.com/abajurpropaganda/" target="_blank">

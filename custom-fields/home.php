@@ -13,8 +13,17 @@
     ]);
 
     $cmb->add_field([
-      'name' => 'Video background',
-      'id' => 'video_bg',
+      'name' => 'Background',
+      'id' => 'home_bg',
+      'type' => 'file',
+      'options' => [
+        'url' => false
+      ]
+    ]);
+
+    $cmb->add_field([
+      'name' => 'Logo campanha',
+      'id' => 'logo_campanha',
       'type' => 'file',
       'options' => [
         'url' => false

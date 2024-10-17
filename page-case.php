@@ -2,9 +2,9 @@
 // Template Name: Case
 ?>
 <?php get_header() ?>
-    <header class="section has-background-white is-medium">
+    <header class="section has-background-black-ter is-medium">
       <div class="container">
-        <h1 class="title has-text-weight-normal is-size-4 has-text-black mb-4">
+        <h1 class="title has-text-weight-normal is-size-4 has-text-white mb-4">
           <?php the_field('titulo') ?>
         </h1>
         <div class="intro">

@@ -1,4 +1,4 @@
-<nav class="navbar is-fixed-top is-primary animate">
+<nav class="navbar is-fixed-top animate">
   <div class="container">
     <div class="navbar-brand is-flex is-align-items-center">
       <a class="navbar-item" href="<?php echo home_url(); ?>">
@@ -13,7 +13,7 @@
         />
       </span>
     </div>
-    <div class="navbar-menu has-background-primary animate">
+    <div class="navbar-menu animate">
       <?php include 'nav-end.php' ?>
       <span class="navbar-burger close">
         <img

@@ -13,31 +13,19 @@
   if(isset($cases)) {
     foreach($cases as $case) {
 ?> 
-  <a href="<?php echo home_url(); ?><?php echo $case['case_link'] ?>" class="card">
-    <picture class="mb-2">
-      <div class="row selo">
-        <?php if(isset($case['case_selo'])) { ?>
-          <img src="<?php echo $case['case_selo'] ?>" alt="">
-        <?php
-        } ?>
-        <?php if(!empty($case['case_status'])) { ?> 
-          <button class="button is-rounded is-small is-black">
-            
-              <?php echo $case['case_status'] ?>
-            
-          </button>
-        <?php
-        } ?>
-      </div>
+  <a href="<?php echo home_url(); ?><?php echo $case['case_link'] ?>" class="card animate">
+    <picture>
       <img src="<?php echo $case['case_thumb'] ?>" alt="" />
     </picture>
-    <h3 class="title is-5 has-text-black"><?php echo $case['case_titulo'] ?></h3>
-    <p class="subtitle is-6 mb-2">
-    <?php echo $case['case_sub_titulo'] ?>
-    </p>
-    <button class="button is-link is-small is-rounded">
-      <span>Saiba mais</span>
-    </button>
+    <div class="card-text animate">
+      <h3 class="title is-5 has-text-white"><?php echo $case['case_titulo'] ?></h3>
+      <p class="subtitle is-6 mb-2 has-text-white">
+      <?php echo $case['case_sub_titulo'] ?>
+      </p>
+      <button class="button is-link is-small is-rounded">
+        <span>Saiba mais</span>
+      </button>
+    </div>
   </a>
 <?php
     }

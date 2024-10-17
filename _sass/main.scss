@@ -7,9 +7,9 @@
   scroll-behavior: smooth;
 }
 // Cores
-$primary: $black;
+$primary: $white;
 $link: #0057ff;
-$body-background-color: #dadada;
+$body-background-color: $black;
 
 // Fontes
 @font-face {
@@ -71,6 +71,12 @@ body {
 }
 
 // Menu
+.navbar {
+  background: transparent;
+}
+.navbar.nav-down {
+  background: $black;
+}
 .nav-up {
   transform: translateY(-100%);
 }
@@ -86,6 +92,17 @@ body {
 // Início
 header {
   position: relative;
+  background-size: auto 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+header.hero .hero-body {
+  height: 50vw;
+  align-items: center;
+  display: flex;
+}
+header img {
+  max-width: 350px;
 }
 header .container {
   z-index: 1;
@@ -104,6 +121,9 @@ header .container {
 }
 
 // Portfólio
+#portfolio.section.is-medium {
+  padding-top: 0;
+}
 .grid {
   column-count: 1;
   column-gap: 1em;
@@ -116,20 +136,52 @@ header .container {
   box-sizing: border-box;
   width: 100%;
   text-decoration: none;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  position: relative;
 }
 .card .icon-text {
   text-decoration: underline;
   font-size: 0.9em;
 }
 .card picture {
-  border-radius: 1em;
   overflow: hidden;
   display: block;
+}
+.card picture::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0);
+  transition: all ease 0.5s;
+}
+.card:hover {
+  scale: 1.1;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  picture::after,
+  .card-text {
+    opacity: 1;
+  }
 }
 .card img {
   display: block;
   width: 100%;
+}
+.card-text {
+  position: absolute;
+  bottom: 0;
+  margin: 1.5em;
+  opacity: 0;
 }
 .selo {
   position: absolute;

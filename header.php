@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
   <head>
     <title><?php wp_title(' | ', 'echo', 'right'); ?><?php bloginfo('name'); ?></title>
     <meta name='description' content='<?php the_field('meta_description') ?>'>

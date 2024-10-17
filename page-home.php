@@ -2,25 +2,27 @@
 // Template Name: Home
 ?>
 <?php get_header() ?>
-<header class="hero is-primary is-large">
+<header class="hero" style="background-image: url('<?php the_field('home_bg') ?>">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title is-size-4 has-text-weight-normal">
-        <?php the_field('texto_h1') ?>
-      </h1>
-      <?php
-        $home_button = get_field('home_button');
-        if(isset($home_button)) {
-          foreach($home_button as $button) {
-      ?> 
-            <a href="<?php echo $button['button_link'] ?>" class="button is-rounded is-small is-link">
-              <span><?php echo $button['button_text'] ?></span>
-            </a>
-      <?php
+      <div class="column is-one-third ">
+        <img src="<?php the_field('logo_campanha') ?>" alt="" class="mb-4">
+        <p class="is-size-6 has-text-weight-normal has-text-white mb-4">
+          <?php the_field('texto_h1') ?>
+        </p>
+        <?php
+          $home_button = get_field('home_button');
+          if(isset($home_button)) {
+            foreach($home_button as $button) {
+        ?> 
+              <a href="<?php echo $button['button_link'] ?>" class="button is-rounded is-small is-link">
+                <span><?php echo $button['button_text'] ?></span>
+              </a>
+        <?php
+            }
           }
-        }
-      ?>
-      
+        ?>
+      </div>
       
       <div class="mt-6 is-flex is-justify-content-center is-full-width">
         <a href="#portfolio">
@@ -32,13 +34,10 @@
       </div>
     </div>    
   </div>
-  <video id="background-video" autoplay loop muted>
-    <source src="<?php the_field('video_bg') ?>" type="video/mp4">
-  </video>
 </header>
 <section id="portfolio" class="section is-medium">
   <div class="container">
-    <h2 class="title is-size-4 has-text-black"><?php the_field('texto_portfolio') ?></h2>
+    <h2 class="title is-size-4 has-text-white"><?php the_field('texto_portfolio') ?></h2>
     <div class="row">
       <div class="grid">
         <?php include 'includes/card.php' ?>
@@ -66,7 +65,7 @@
 
 <section
   id="clientes"
-  class="section has-background-white is-medium has-text-centered"
+  class="section is-medium has-text-centered"
 >
   <div class="container">
     <h2 class="title is-size-4 has-text-black"><?php the_field('texto_clientes') ?></h2>

@@ -18,8 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const navHeight = nav.offsetHeight;
   let prevScrollPos = window.scrollY;
 
-  const addClassOnScroll = () => nav.classList.add('nav-up');
-  const removeClassOnScroll = () => nav.classList.remove('nav-up');
+  const addClassOnScroll = () => {
+    nav.classList.add('nav-up');
+    nav.classList.remove('nav-down');
+  };
+  const removeClassOnScroll = () => {
+    nav.classList.remove('nav-up');
+    nav.classList.add('nav-down');
+  };
 
   window.addEventListener('scroll', HideShowNavOnScroll);
 
@@ -34,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (prevScrollPos > scrollPos) {
       removeClassOnScroll();
+    }
+
+    if (prevScrollPos < navHeight) {
+      nav.classList.remove('nav-down');
     }
 
     prevScrollPos = scrollPos;

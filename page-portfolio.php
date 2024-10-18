@@ -14,10 +14,14 @@
     </header>
     <section id="portfolio" class="section is-medium">
       <div class="container">
-        <div class="row">
-          <div class="grid">
-            <?php include 'includes/card.php' ?>
-          </div>
+        <div class="row"> 
+        <?php  
+          $cases = get_field('cases'); 
+          $categorias = $cases[0]['case_categorias'];
+            foreach($categorias as $categoria) {
+              echo $categoria;
+            }
+        ?> 
         </div>
       </div>
     </section>

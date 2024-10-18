@@ -50,24 +50,9 @@
     ]);
 
     $cmb->add_group_field($cases, [
-      'name' => 'Status',
-      'id' => 'case_status',
-      'type' => 'text',
-    ]);
-
-    $cmb->add_group_field($cases, [
       'name' => 'Link',
       'id' => 'case_link',
       'type' => 'text',
-    ]);
-
-    $cmb->add_group_field($cases, [
-      'name' => 'Selo',
-      'id' => 'case_selo',
-      'type' => 'file',
-      'options' => [
-        'url' => false
-      ]
     ]);
 
     $cmb->add_group_field($cases, [
@@ -78,5 +63,18 @@
         'url' => false
       ]
     ]);
+
+    $cmb->add_group_field($cases, [
+      'name'    => 'Categorias',
+      'id'      => 'case_categorias',
+      'type'    => 'multicheck',
+      'options' => array(
+          'Social Media' => 'Social Media',
+          'Promo' => 'Promo',
+          'Campanha On e off' => 'Campanha On e off',
+          'Branding' => 'Branding',
+          'Digital' => 'Digital',
+      ),
+  ] );
   };
 ?>

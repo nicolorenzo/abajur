@@ -35,7 +35,7 @@
     </div>    
   </div>
 </header>
-<section id="portfolio" class="section is-medium">
+<section id="portfolio" class="section is-medium portfolio-home">
   <div class="container">
     <h2 class="title is-size-4 has-text-white"><?php the_field('texto_portfolio') ?></h2>
     <div class="row">

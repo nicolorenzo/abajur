@@ -25,3 +25,6 @@
 />
 <!-- Recaptcha -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

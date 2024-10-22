@@ -84,20 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
       clickable: true,
     },
   });
-  const swiperSobre = new Swiper('.swiper.sobre', {
-    autoplay: {
-      delay: 10000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
+  // const swiperPortfolio = new Swiper('.swiper.portfolio', {
+  //   slidesPerView: 'auto',
+  //   spaceBetween: 30,
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  // });
 
   // Formulário
   let inputs = document.querySelectorAll('.form-control *:required');

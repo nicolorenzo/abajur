@@ -10413,7 +10413,7 @@ header .container {
   opacity: 0.3;
 }
 
-.portfolio-home {
+.portfolio-home.section.is-medium {
   padding-top: 0;
 }
 
@@ -10480,8 +10480,28 @@ header .container {
 .card-text {
   position: absolute;
   bottom: 0;
+  left: 0;
   margin: 1.5em;
   opacity: 0;
+}
+
+.swiper.portfolio {
+  width: 100%;
+  overflow: unset;
+}
+
+.portfolio .card {
+  width: auto;
+  height: 28vw;
+  max-height: 25rem;
+}
+.portfolio .swiper-slide.card {
+  margin-bottom: 0;
+}
+.portfolio .swiper-slide.card img,
+.portfolio .swiper-slide.card picture {
+  height: 100%;
+  width: auto;
 }
 
 .selo {

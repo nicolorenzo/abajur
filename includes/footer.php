@@ -43,8 +43,6 @@
   </div>
 </footer>
 <?php include 'whatsapp-button.php' ?>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <script
   type="text/javascript"

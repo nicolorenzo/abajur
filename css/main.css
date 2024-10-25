@@ -414,7 +414,7 @@ span {
 }
 
 strong {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   font-weight: 700;
 }
 
@@ -448,7 +448,7 @@ table th:not([align]) {
   text-align: inherit;
 }
 table th {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 
 @keyframes spinAround {
@@ -480,7 +480,7 @@ a.box:active {
   background-color: hsl(0deg, 0%, 100%);
   border-color: hsl(0deg, 0%, 86%);
   border-width: 1px;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   cursor: pointer;
   justify-content: center;
   padding-bottom: calc(0.5em - 1px);
@@ -532,11 +532,11 @@ a.box:active {
 }
 .button.is-text:hover, .button.is-text.is-hovered, .button.is-text:focus, .button.is-text.is-focused {
   background-color: hsl(0deg, 0%, 96%);
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .button.is-text:active, .button.is-text.is-active {
   background-color: #e8e8e8;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .button.is-text[disabled], fieldset[disabled] .button.is-text {
   background-color: transparent;
@@ -1641,7 +1641,7 @@ a.box:active {
 .content h4,
 .content h5,
 .content h6 {
-  color: hsl(0deg, 0%, 21%);
+  color: hsl(0deg, 0%, 100%);
   font-weight: 600;
   line-height: 1.125;
 }
@@ -1757,7 +1757,7 @@ a.box:active {
   vertical-align: top;
 }
 .content table th {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .content table th:not([align]) {
   text-align: inherit;
@@ -1765,12 +1765,12 @@ a.box:active {
 .content table thead td,
 .content table thead th {
   border-width: 0 0 2px;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .content table tfoot td,
 .content table tfoot th {
   border-width: 2px 0 0;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .content table tbody tr:last-child td,
 .content table tbody tr:last-child th {
@@ -2223,7 +2223,7 @@ div.icon-text {
 }
 .table {
   background-color: hsl(0deg, 0%, 100%);
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .table td,
 .table th {
@@ -2313,7 +2313,7 @@ div.icon-text {
   vertical-align: middle;
 }
 .table th {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .table th:not([align]) {
   text-align: inherit;
@@ -2337,7 +2337,7 @@ div.icon-text {
 .table thead td,
 .table thead th {
   border-width: 0 0 2px;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .table tfoot {
   background-color: transparent;
@@ -2345,7 +2345,7 @@ div.icon-text {
 .table tfoot td,
 .table tfoot th {
   border-width: 2px 0 0;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .table tbody {
   background-color: transparent;
@@ -2607,7 +2607,7 @@ a.tag:hover {
 }
 
 .title {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125;
@@ -2648,7 +2648,7 @@ a.tag:hover {
   line-height: 1.25;
 }
 .subtitle strong {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   font-weight: 600;
 }
 .subtitle:not(.is-spaced) + .title {
@@ -2872,7 +2872,7 @@ a.tag:hover {
   cursor: pointer;
 }
 .radio:hover, .checkbox:hover {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 [disabled].radio, [disabled].checkbox, fieldset[disabled] .radio, fieldset[disabled] .checkbox,
 .radio input[disabled],
@@ -2927,7 +2927,7 @@ a.tag:hover {
   padding: 0.5em 1em;
 }
 .select:not(.is-multiple):not(.is-loading):hover::after {
-  border-color: hsl(0deg, 0%, 21%);
+  border-color: inherit;
 }
 .select.is-white:not(:hover)::after {
   border-color: hsl(0deg, 0%, 100%);
@@ -3389,14 +3389,14 @@ a.tag:hover {
 }
 .file-label:hover .file-cta {
   background-color: #eeeeee;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .file-label:hover .file-name {
   border-color: #d5d5d5;
 }
 .file-label:active .file-cta {
   background-color: #e8e8e8;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .file-label:active .file-name {
   border-color: #cfcfcf;
@@ -3451,7 +3451,7 @@ a.tag:hover {
 }
 
 .label {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   display: block;
   font-size: 1rem;
   font-weight: 700;
@@ -3760,7 +3760,7 @@ a.tag:hover {
   padding-left: 0;
 }
 .breadcrumb li.is-active a {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   cursor: default;
   pointer-events: none;
 }
@@ -3838,7 +3838,7 @@ a.tag:hover {
 
 .card-header-title {
   align-items: center;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   display: flex;
   flex-grow: 1;
   font-weight: 700;
@@ -4161,7 +4161,7 @@ button.dropdown-item.is-active {
 }
 .menu-list a:hover {
   background-color: hsl(0deg, 0%, 96%);
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
 }
 .menu-list a.is-active {
   background-color: #0057ff;
@@ -4422,7 +4422,7 @@ button.dropdown-item.is-active {
 }
 
 .modal-card-title {
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   flex-grow: 1;
   flex-shrink: 0;
   font-size: 1.5rem;
@@ -5503,7 +5503,7 @@ body.has-spaced-navbar-fixed-bottom {
 .pagination-next,
 .pagination-link {
   border-color: hsl(0deg, 0%, 86%);
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   min-width: 2.5em;
 }
 .pagination-previous:hover,
@@ -5740,7 +5740,7 @@ body.has-spaced-navbar-fixed-bottom {
 .panel-heading {
   background-color: hsl(0deg, 0%, 93%);
   border-radius: 6px 6px 0 0;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   font-size: 1.25em;
   font-weight: 700;
   line-height: 1.25;
@@ -5772,7 +5772,7 @@ body.has-spaced-navbar-fixed-bottom {
 
 .panel-block {
   align-items: center;
-  color: hsl(0deg, 0%, 21%);
+  color: inherit;
   display: flex;
   justify-content: flex-start;
   padding: 0.5em 0.75em;
@@ -5848,8 +5848,8 @@ label.panel-block:hover {
   vertical-align: top;
 }
 .tabs a:hover {
-  border-bottom-color: hsl(0deg, 0%, 21%);
-  color: hsl(0deg, 0%, 21%);
+  border-bottom-color: inherit;
+  color: inherit;
 }
 .tabs li {
   display: block;
@@ -10492,6 +10492,20 @@ header .container {
 .swiper.portfolio {
   width: 100%;
   overflow: unset;
+  position: relative;
+}
+.swiper.portfolio:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10%;
+  right: -25px;
+  width: 100px;
+  height: 120%;
+  z-index: 2;
+  background: rgb(10, 10, 10);
+  background: linear-gradient(-90deg, rgb(10, 10, 10) 0%, rgba(10, 10, 10, 0) 100%);
+  pointer-events: none;
 }
 
 .portfolio .card {
@@ -10506,33 +10520,7 @@ header .container {
 .portfolio .swiper-slide.card picture {
   height: 100%;
   width: auto;
-}
-
-.selo {
-  position: absolute;
-  margin: 0 1em;
-  padding-top: 1em;
-  width: calc(100% - 2em);
-}
-
-.selo img {
-  max-width: 60px;
-  top: 0;
-  position: absolute;
-  z-index: 2;
-}
-
-.selo button {
-  float: right;
-}
-
-.elementor .selo {
-  top: 0;
-}
-
-.elementor .selo img {
-  right: 0;
-  max-width: 80px;
+  object-fit: cover;
 }
 
 #trabalhe-conosco {
@@ -10591,6 +10579,7 @@ header .container {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 2em;
+  padding: 0.5em;
 }
 
 .swiper {
@@ -10797,6 +10786,10 @@ footer .menu a {
   }
 }
 @media screen and (max-width: 768px) {
+  .portfolio .card {
+    height: 80vw;
+  }
+
   footer ul.menu {
     text-align: left;
   }
@@ -10804,6 +10797,10 @@ footer .menu a {
 @media screen and (min-width: 769px), print {
   .contato-icons {
     margin-top: 0;
+  }
+
+  .portfolio .card {
+    height: 40vw;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {

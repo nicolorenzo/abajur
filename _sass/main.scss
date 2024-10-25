@@ -11,6 +11,8 @@ $primary: $white;
 $link: #0057ff;
 $body-background-color: $black;
 $body-color: $primary;
+$content-heading-color: $primary;
+$text-strong: inherit;
 
 // Form
 $input-radius: 1.25em;
@@ -198,6 +200,24 @@ header .container {
 .swiper.portfolio {
   width: 100%;
   overflow: unset;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10%;
+    right: -25px;
+    width: 100px;
+    height: 120%;
+    z-index: 2;
+    background: rgb(10, 10, 10);
+    background: linear-gradient(
+      -90deg,
+      rgba(10, 10, 10, 1) 0%,
+      rgba(10, 10, 10, 0) 100%
+    );
+    pointer-events: none;
+  }
 }
 .portfolio {
   .card {
@@ -211,30 +231,9 @@ header .container {
     picture {
       height: 100%;
       width: auto;
+      object-fit: cover;
     }
   }
-}
-.selo {
-  position: absolute;
-  margin: 0 1em;
-  padding-top: 1em;
-  width: calc(100% - 2em);
-}
-.selo img {
-  max-width: 60px;
-  top: 0;
-  position: absolute;
-  z-index: 2;
-}
-.selo button {
-  float: right;
-}
-.elementor .selo {
-  top: 0;
-}
-.elementor .selo img {
-  right: 0;
-  max-width: 80px;
 }
 
 // Trabalhe conosco
@@ -288,28 +287,12 @@ header .container {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 2em;
+  padding: 0.5em;
 }
 
 .swiper {
   width: 90%;
-  // height: 100%;
 }
-
-// .swiper-slide {
-//   text-align: center;
-//   font-size: 18px;
-//   background: #fff;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
 
 // Footer
 
@@ -494,12 +477,10 @@ footer .menu a {
 
 // Mobile
 @include mobile {
-  // #portfolio .button {
-  //   width: 100%;
-  //   max-width: 100%;
-  //   font-size: .9em;
-  //   padding: 2em 1em;
-  // }
+  //Portfolio
+  .portfolio .card {
+    height: 80vw;
+  }
 
   // Footer
   footer ul.menu {
@@ -512,6 +493,11 @@ footer .menu a {
   // Página Contato
   .contato-icons {
     margin-top: 0;
+  }
+
+  //Portfolio
+  .portfolio .card {
+    height: 40vw;
   }
 }
 

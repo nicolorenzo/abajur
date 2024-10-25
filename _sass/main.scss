@@ -519,6 +519,9 @@ footer .menu a {
   .grid {
     column-count: 3;
   }
+  .swiper.portfolio::before {
+    right: -105px;
+  }
 
   // Página Case
   .section.case {
@@ -543,5 +546,13 @@ footer .menu a {
 @include widescreen {
   .case-columns {
     max-width: 1344px;
+  }
+  //Portfolio
+  .swiper.portfolio {
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .swiper.portfolio::before {
+    right: 0;
   }
 }

@@ -10817,6 +10817,10 @@ footer .menu a {
     column-count: 3;
   }
 
+  .swiper.portfolio::before {
+    right: -105px;
+  }
+
   .section.case {
     padding: 9rem 4.5rem;
     display: flex;
@@ -10838,5 +10842,14 @@ footer .menu a {
 @media screen and (min-width: 1216px) {
   .case-columns {
     max-width: 1344px;
+  }
+
+  .swiper.portfolio {
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+
+  .swiper.portfolio::before {
+    right: 0;
   }
 }

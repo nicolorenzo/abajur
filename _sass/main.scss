@@ -10,6 +10,13 @@
 $primary: $white;
 $link: #0057ff;
 $body-background-color: $black;
+$body-color: $primary;
+
+// Form
+$input-radius: 1.25em;
+$input-color: $primary;
+$input-background-color: $black-ter;
+$input-border-color: $black-ter;
 
 // Fontes
 @font-face {
@@ -51,6 +58,10 @@ body {
 //Helpers
 .animate {
   transition: all ease 0.5s;
+}
+.white-filter {
+  filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(305deg)
+    brightness(111%) contrast(105%);
 }
 
 // Botões e links
@@ -357,18 +368,16 @@ footer .menu a {
   height: 1em;
   font-size: 2em;
 }
+.field {
+  &.field:not(:last-child) {
+    margin: 0.3em 0 1em;
+  }
+}
 .textarea,
 .input,
 .textarea::placeholder,
 .input::placeholder {
   font-family: 'Montserrat', sans-serif;
-  background-color: transparent !important;
-  color: hsl(0deg, 0%, 48%) !important;
-  border-radius: 1.5em !important;
-}
-.textarea,
-.input {
-  border: 1px solid hsl(0deg, 0%, 48%);
 }
 .field {
   display: flex;
@@ -454,6 +463,7 @@ footer .menu a {
     width: 100%;
     height: 100%;
     max-height: 100% !important;
+    background: $black;
   }
   .navbar-menu.open {
     right: 0;

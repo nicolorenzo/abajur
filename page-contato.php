@@ -87,7 +87,7 @@
               ></iframe>
             </div>
             <span class="icon-text">
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/local-icon.svg" alt="" />
               </span>
               <span>R. Dona Leonor, 415 - Rio Branco - Porto Alegre/RS - Brasil</span>
@@ -97,13 +97,13 @@
               target="_blank"
               class="icon-text"
             >
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/mail-icon.svg" alt="" />
               </span>
               <span>contato@abajurpropaganda.com.br</span>
             </a>
             <span class="icon-text">
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/phone-icon.svg" alt="" />
               </span>
               <span
@@ -115,7 +115,7 @@
               target="_blank"
               class="icon-text"
             >
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/instagram-icon.svg" alt="" />
               </span>
               <span>abajurpropaganda</span>
@@ -125,7 +125,7 @@
               target="_blank"
               class="icon-text"
             >
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/linkedin-icon.svg" alt="" />
               </span>
               <span>company/abajur</span>
@@ -135,7 +135,7 @@
               target="_blank"
               class="icon-text"
             >
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/facebook-icon.svg" alt="" />
               </span>
               <span>AbajurPropaganda</span>

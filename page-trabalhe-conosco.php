@@ -19,7 +19,7 @@
           <div class="column">
             <?php echo $alert; ?>
             <form action="" method="POST" enctype="multipart/form-data">
-              <label for="mensagem">Mensagem</label>
+              <label class="has-text-white" for="mensagem">Mensagem</label>
               <div class="field">
                 <textarea
                   class="textarea"
@@ -27,7 +27,7 @@
                   placeholder="Digite sua mensagem"
                 ></textarea>
               </div>
-              <label for="nome">Nome</label>
+              <label class="has-text-white" for="nome">Nome</label>
               <div class="field form-control">
                 <input
                   name="nome"
@@ -36,7 +36,7 @@
                   placeholder="Digite seu nome" minlength="6" required
                 />
               </div>
-              <label for="email">E-mail</label>
+              <label class="has-text-white" for="email">E-mail</label>
               <div class="field form-control">
                 <input
                   name="email"
@@ -45,7 +45,7 @@
                   placeholder="Digite um e-mail válido" required
                 />
               </div>
-              <label for="telefone">Telefone</label>
+              <label class="has-text-white" for="telefone">Telefone</label>
               <div class="field form-control">
                 <input
                   name="telefone"
@@ -54,7 +54,7 @@
                   placeholder="Telefone com DDD" required pattern="^[0-9]{10,}"
                 />
               </div>
-              <label for="linkedin">LinkedIn</label>
+              <label class="has-text-white" for="linkedin">LinkedIn</label>
               <div class="field form-control">
                 <input
                   name="linkedin"
@@ -63,7 +63,7 @@
                   placeholder="Link para o seu LinkedIn" required minlength="6"
                 />
               </div>
-              <label for="portfolio">Portfólio</label>
+              <label class="has-text-white" for="portfolio">Portfólio</label>
               <div class="field">
                 <input
                   name="portfolio"
@@ -74,10 +74,10 @@
               </div>
               <div class="field">
                 <label style="cursor:pointer" for="file" class="icon-text">
-                  <span class="icon">
+                  <span class="icon white-filter">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/images/paperclip-icon.svg" alt="" />
                   </span>
-                  <span>Anexar arquivo</span>
+                  <span class="has-text-white">Anexar arquivo</span>
                 </label>
                 <input style="display:none" type="file" name="file" id="file" />
               </div>
@@ -97,7 +97,7 @@
               target="_blank"
               class="icon-text"
             >
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/mail-icon.svg" alt="" />
               </span>
               <span>contato@abajurpropaganda.com.br</span>
@@ -107,7 +107,7 @@
               target="_blank"
               class="icon-text"
             >
-              <span class="icon">
+              <span class="icon white-filter">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/images/linkedin-icon.svg" alt="" />
               </span>
               <span>company/abajur</span>

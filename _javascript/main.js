@@ -50,6 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Initialize Swiper
+  var swiper = new Swiper('.swiperHeader', {
+    slidesPerView: 1,
+    effect: 'fade',
+    autoplay: {
+      delay: 5500,
+    },
+  });
+
   const swiperClientes = new Swiper('.swiper.clientes', {
     autoplay: {
       delay: 2500,

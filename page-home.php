@@ -3,42 +3,54 @@
 ?>
 <?php get_header() ?>
 <header class="hero">
-    <div class="hero-body" style="flex-wrap: wrap">
-      <div class="container">
-        <div class="columns is-mobile">
-          <div class="column header-text is-half is-full-mobile">
-            <h2 class="title is-size-4 mb-2">15 anos de propaganda e estratégia:</h2>
-            <p class="is-size-6 has-text-weight-normal has-text-white mb-4">
-              Mais histórias em menos tempo.
-            </p>    
-            <a href="sobre" class="button is-rounded is-small is-link">
-              <span>Saiba mais</span>
-            </a>
-          </div>
-        </div>        
-      </div> 
-      <div class="scroll-button is-flex is-justify-content-center is-full-width">
-          <a href="#portfolio">
-            <img
-              src="<?php echo get_stylesheet_directory_uri() ?>/images/scroll-down-icon.svg"
-              alt=""
-            />
+  <div class="hero-body" style="flex-wrap: wrap">
+    <div class="container">
+      <div class="columns is-mobile">
+        <div class="column header-text is-half is-full-mobile">
+          <h2 class="title is-size-4 mb-2">15 anos de propaganda e estratégia:</h2>
+          <p class="is-size-6 has-text-weight-normal has-text-white mb-4">
+            Mais histórias em menos tempo.
+          </p>    
+          <a href="sobre" class="button is-rounded is-small is-link">
+            <span>Saiba mais</span>
           </a>
-        </div>   
-    </div>
-    <!-- Swiper -->
+        </div>
+      </div>        
+    </div> 
+    <div class="scroll-button is-flex is-justify-content-center is-full-width">
+      <a href="#portfolio">
+        <img
+          src="<?php echo get_stylesheet_directory_uri() ?>/images/scroll-down-icon.svg"
+          alt=""
+        />
+      </a>
+    </div>   
+  </div>
+  <!-- Swiper -->
   <div class="swiperHeader">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
+          <picture>
+            <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_mobile_05.jpg">
+            <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_05.jpg" />
+          </picture> 
+        </div>
+      <div class="swiper-slide">
         <picture>
-          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/abajur_campanha_15_anos_background-mobile-02">
-          <img src="<?php echo get_home_url() ?>/abajur_campanha_15_anos_background-02" />
+          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_mobile_04.jpg">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_04.jpg" />
         </picture> 
       </div>
       <div class="swiper-slide">
         <picture>
-          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/abajur_campanha_15_anos_background-mobile">
-          <img src="<?php echo get_home_url() ?>/abajur_campanha_15_anos_background" alt="">
+          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background-mobile-02.jpg">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background-02.jpg" />
+        </picture> 
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background-mobile.jpg">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background.jpg" alt="">
         </picture>
       </div>
     </div>

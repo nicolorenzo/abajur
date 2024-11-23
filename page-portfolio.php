@@ -73,7 +73,6 @@
             showCategory('Promo');
             showCategory('Campanha On e off');
             showCategory('Branding');
-            showCategory('Digital');
           ?>
       </div>
     </section>

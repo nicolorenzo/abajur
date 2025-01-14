@@ -73,6 +73,7 @@
             showCategory('Promo');
             showCategory('Campanha On e off');
             showCategory('Branding');
+            showCategory('Audiovisual');
           ?>
       </div>
     </section>

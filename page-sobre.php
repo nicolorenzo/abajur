@@ -11,6 +11,13 @@
       <?php the_field('sub_titulo') ?>
     </p>
   </div>
+  <img src="http://abajur.test/wp-content/uploads/2024/11/abajur-banner-sobre.jpg" style="position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .3;">
 </header>
 <section id="sobre" class="section is-medium">
   <div class="container content">

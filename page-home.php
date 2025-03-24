@@ -89,7 +89,7 @@
   class="section is-medium has-text-centered"
 >
   <div class="container">
-    <h2 class="title is-size-4 has-text-black"><?php the_field('texto_clientes') ?></h2>
+    <h2 class="title is-size-4 has-text-white"><?php the_field('texto_clientes') ?></h2>
     <!-- Slider main container -->
     <div class="row-swiper is-flex is-align-items-center">
       <div class="swiper-button-prev"></div>

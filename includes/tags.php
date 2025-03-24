@@ -4,7 +4,7 @@
 <link
   rel="icon"
   type="image/x-icon"
-  href="<?php echo get_stylesheet_directory_uri() ?>/images/favicon.png"
+  href="https://abajurpropaganda.com.br/wp-content/uploads/2025/01/favicon.png"
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link
   rel="preconnect"

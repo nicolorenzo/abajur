@@ -74,6 +74,7 @@
           'Campanha On e off' => 'Campanha On e off',
           'Branding' => 'Branding',
           'Digital' => 'Digital',
+          'Audiovisual' => 'Audiovisual',
       ),
   ] );
   };

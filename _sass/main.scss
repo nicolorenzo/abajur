@@ -297,8 +297,8 @@ header .scroll-button {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  width: 0;
-  position: unset;
+  width: auto;
+  position: absolute;
   margin-top: unset;
 }
 .swiper-button-next::after,

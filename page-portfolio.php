@@ -48,7 +48,7 @@
               $slug = str_replace(' ', '', $nomeCategoria);
               echo '
                 <h2 class="title is-size-4 has-text-white mb-4">'.$nomeCategoria.'</h2>
-                <div class="row is-flex is-align-items-center mb-6">
+                <div class="row is-flex is-align-items-center mb-6 is-relative">
                   <div class="'.$slug.' swiper-button-prev"></div>
                   <div class="swiper portfolio '.$slug.'">
                     <div class="swiper-wrapper">'.

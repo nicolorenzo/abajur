@@ -91,7 +91,7 @@
   <div class="container">
     <h2 class="title is-size-4 has-text-white"><?php the_field('texto_clientes') ?></h2>
     <!-- Slider main container -->
-    <div class="row-swiper is-flex is-align-items-center">
+    <div class="row-swiper">
       <div class="swiper-button-prev"></div>
       <div class="swiper clientes">
         <!-- Additional required wrapper -->

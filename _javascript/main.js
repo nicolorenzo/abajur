@@ -59,6 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const swiperClientes = new Swiper('.swiper.clientes', {
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 40,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -69,15 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     breakpoints: {
       375: {
-        spaceBetween: 10,
         slidesPerView: 3,
       },
       768: {
-        spaceBetween: 20,
         slidesPerView: 4,
       },
       1024: {
-        spaceBetween: 40,
         slidesPerView: 6,
       },
     },

@@ -144,6 +144,15 @@ header .scroll-button {
   z-index: 1;
   width: 100%;
 }
+.swiper.clientes {
+  .swiper-slide {
+    display: block;
+    height: calc((100% - 40px) / 2) !important;
+  }
+  .swiper-wrapper {
+    height: 300px;
+  }
+}
 
 // Portfólio
 .portfolio-home.section.is-medium {
@@ -299,7 +308,7 @@ header .scroll-button {
 .swiper-button-prev {
   width: auto;
   position: absolute;
-  margin-top: unset;
+  margin-top: unset !important;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -525,7 +534,7 @@ footer .menu a {
     margin-top: 0;
   }
 
-  //Portfolio
+  // Portfolio
   .portfolio .card {
     height: 40vw;
   }

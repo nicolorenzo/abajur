@@ -10431,6 +10431,14 @@ header .scroll-button {
   width: 100%;
 }
 
+.swiper.clientes .swiper-slide {
+  display: block;
+  height: calc((100% - 40px) / 2) !important;
+}
+.swiper.clientes .swiper-wrapper {
+  height: 300px;
+}
+
 .portfolio-home.section.is-medium {
   padding-top: 0;
 }
@@ -10588,7 +10596,7 @@ header .scroll-button {
 .swiper-button-prev {
   width: auto;
   position: absolute;
-  margin-top: unset;
+  margin-top: unset !important;
 }
 
 .swiper-button-next::after,

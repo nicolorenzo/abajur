@@ -10840,7 +10840,16 @@ footer .menu a {
     height: 40vw;
   }
 }
+@media (min-width: 559px) and (max-width: 768px) {
+  .swiper.clientes .swiper-wrapper {
+    height: 300px;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  .swiper.clientes .swiper-wrapper {
+    height: 400px;
+  }
+
   .grid {
     column-count: 2;
   }

@@ -540,8 +540,17 @@ footer .menu a {
   }
 }
 
+@media (min-width: 559px) and (max-width: 768px) {
+  .swiper.clientes .swiper-wrapper {
+    height: 300px;
+  }
+}
+
 // Tablet only
 @include tablet-only {
+  .swiper.clientes .swiper-wrapper {
+    height: 400px;
+  }
   // Portfólio
   .grid {
     column-count: 2;

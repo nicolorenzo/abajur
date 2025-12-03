@@ -10890,3 +10890,8 @@ footer .menu a {
     right: 0;
   }
 }
+@media screen and (min-width: 1408px) {
+  .swiper.clientes .swiper-wrapper {
+    height: 400px;
+  }
+}

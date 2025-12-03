@@ -595,3 +595,10 @@ footer .menu a {
     right: 0;
   }
 }
+
+// Fullhd
+@include fullhd {
+  .swiper.clientes .swiper-wrapper {
+    height: 400px;
+  }
+}

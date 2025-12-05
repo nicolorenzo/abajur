@@ -7,9 +7,9 @@
     <div class="container">
       <div class="columns is-mobile">
         <div class="column header-text is-half is-full-mobile">
-          <h2 class="title is-size-4 mb-2">15 anos de propaganda e estratégia:</h2>
+          <h2 class="title is-size-4 mb-2">Quando será o ponto de virada de sua empresa?</h2>
           <p class="is-size-6 has-text-weight-normal has-text-white mb-4">
-            Mais histórias em menos tempo.
+           Metodologia que transforma marcas e resultados.
           </p>    
           <a href="sobre" class="button is-rounded is-small is-link">
             <span>Saiba mais</span>
@@ -30,27 +30,15 @@
   <div class="swiperHeader">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-          <picture>
-            <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_mobile_05.jpg">
-            <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_05.jpg" />
-          </picture> 
-        </div>
-      <div class="swiper-slide">
         <picture>
-          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_mobile_04.jpg">
-          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background_04.jpg" />
-        </picture> 
+          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-iphone-mobile-1.jpg">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-desk.jpg" alt="">
+        </picture>
       </div>
       <div class="swiper-slide">
         <picture>
-          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background-mobile-02.jpg">
-          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background-02.jpg" />
-        </picture> 
-      </div>
-      <div class="swiper-slide">
-        <picture>
-          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background-mobile.jpg">
-          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2024/11/abajur_campanha_15_anos_background.jpg" alt="">
+          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-mobile.jpg">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-mobile.jpg" alt="">
         </picture>
       </div>
     </div>

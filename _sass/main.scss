@@ -466,11 +466,15 @@ footer .menu a {
     width: 100% !important;
   }
   header.hero .hero-body {
-    height: 90vw;
+    height: 139vw;
     align-items: start;
+    padding-top: 5rem;
   }
   .scroll-button {
     display: none !important;
+  }
+  .swiperHeader {
+    top: 9rem;
   }
 }
 

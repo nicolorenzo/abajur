@@ -32,13 +32,13 @@
       <div class="swiper-slide">
         <picture>
           <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-iphone-mobile-1.jpg">
-          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-desk.jpg" alt="">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-iphone-desk.jpg" alt="">
         </picture>
       </div>
       <div class="swiper-slide">
         <picture>
           <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-mobile.jpg">
-          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-mobile.jpg" alt="">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-desk.jpg" alt="">
         </picture>
       </div>
     </div>

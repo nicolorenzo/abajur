@@ -10567,6 +10567,19 @@ header .scroll-button {
   z-index: 0;
 }
 
+.background-trabalhe-conosco {
+  position: relative;
+}
+
+.background-trabalhe-conosco > img {
+  display: block;
+  height: 800px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .row-swiper {
   gap: 1em;
 }
@@ -10857,6 +10870,21 @@ footer .menu a {
 
   .grid {
     column-count: 2;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .background-trabalhe-conosco {
+    position: relative;
+    padding-bottom: 12rem;
+  }
+
+  .background-trabalhe-conosco > img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 @media screen and (min-width: 1024px) {

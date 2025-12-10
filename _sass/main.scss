@@ -281,6 +281,17 @@ header .scroll-button {
   opacity: 0.4;
   z-index: 0;
 }
+.background-trabalhe-conosco {
+  position: relative;
+}
+.background-trabalhe-conosco > img {
+  display: block;
+  height: 800px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
 
 // Swiper
 .row-swiper {
@@ -560,7 +571,21 @@ footer .menu a {
     column-count: 2;
   }
 }
-
+@media screen and (max-width: 1080px) {
+  // Trabalhe conosco
+  .background-trabalhe-conosco {
+    position: relative;
+    padding-bottom: 12rem;
+  }
+  .background-trabalhe-conosco > img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
 // Desktop
 @include desktop {
   html {

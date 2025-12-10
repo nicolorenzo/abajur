@@ -13,7 +13,7 @@
         </p>
       </div>
     </header>
-    <section class="section is-medium">
+    <section class="section is-medium background-trabalhe-conosco">
       <div class="container">
         <div class="columns">
           <div class="column">
@@ -115,6 +115,7 @@
           </div>
         </div>
       </div>
+      <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-trabalhe-conosco.jpg" alt="">
     </section>
 
 <?php get_footer() ?>

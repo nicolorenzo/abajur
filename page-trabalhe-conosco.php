@@ -13,7 +13,7 @@
         </p>
       </div>
     </header>
-    <section class="section is-medium background-trabalhe-conosco">
+    <section class="section is-medium">
       <div class="container">
         <div class="columns">
           <div class="column">
@@ -91,31 +91,34 @@
               </div>
             </form>
           </div>
-          <div class="column contato-icons">
-            <a
-              href="mailto:contato@abajurpropaganda.com.br"
-              target="_blank"
-              class="icon-text"
-            >
-              <span class="icon white-filter">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/mail-icon.svg" alt="" />
-              </span>
-              <span>contato@abajurpropaganda.com.br</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/abajur"
-              target="_blank"
-              class="icon-text"
-            >
-              <span class="icon white-filter">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/linkedin-icon.svg" alt="" />
-              </span>
-              <span>company/abajur</span>
-            </a>
+          <div class="column">
+          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-sede-trabalhe-conosco.jpg" alt="Imagem da sede da Abajur Propaganda" class="mb-5">
+
+            <div class="contato-icons">
+              <a
+                href="mailto:contato@abajurpropaganda.com.br"
+                target="_blank"
+                class="icon-text"
+              >
+                <span class="icon white-filter">
+                  <img src="<?php echo get_stylesheet_directory_uri() ?>/images/mail-icon.svg" alt="" />
+                </span>
+                <span>contato@abajurpropaganda.com.br</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/abajur"
+                target="_blank"
+                class="icon-text"
+              >
+                <span class="icon white-filter">
+                  <img src="<?php echo get_stylesheet_directory_uri() ?>/images/linkedin-icon.svg" alt="" />
+                </span>
+                <span>company/abajur</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-trabalhe-conosco.jpg" alt="">
     </section>
 
 <?php get_footer() ?>

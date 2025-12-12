@@ -8,7 +8,7 @@
 }
 // Cores
 $primary: $white;
-$link: #0057ff;
+$link: #eba824;
 $body-background-color: $black;
 $body-color: $primary;
 $content-heading-color: $primary;
@@ -320,6 +320,7 @@ header .scroll-button {
   width: auto;
   position: absolute;
   margin-top: unset !important;
+  color: $link !important;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {

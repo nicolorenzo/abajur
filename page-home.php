@@ -7,7 +7,7 @@
     <div class="container">
       <div class="columns is-mobile">
         <div class="column header-text is-half is-full-mobile">
-          <h2 class="title is-size-4 mb-2">Você precisa experimentar a comunicação da Abajur.</h2>
+          <h2 class="title is-size-4 mb-2 mt-6">Você precisa experimentar a comunicação da Abajur.</h2>
           
           <a href="sobre" class="button is-rounded is-small is-link">
             <span>Saiba mais</span>
@@ -29,8 +29,8 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <picture>
-          <source media="(max-width:580px)" srcset="https://abajurpropaganda.com.br/wp-content/uploads/2026/11/STORIES_Campanha2026_fruki.jpg">
-          <img src="https://abajurpropaganda.com.br/wp-content/uploads/2026/11/Campanha2026_lata.jpg" alt="">
+          <source media="(max-width:580px)" srcset="https://i.imgur.com/WqsvHmW.jpeg">
+          <img src="https://i.imgur.com/u4TX7x9.jpeg" alt="">
         </picture>
       </div>
     </div>

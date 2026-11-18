@@ -2,15 +2,13 @@
 // Template Name: Home
 ?>
 <?php get_header() ?>
-<header class="hero">
-  <div class="hero-body" style="flex-wrap: wrap">
+<header class="hero" style="overflow: hidden">
+  <div class="hero-body" style="flex-wrap: wrap ">
     <div class="container">
       <div class="columns is-mobile">
         <div class="column header-text is-half is-full-mobile">
-          <h2 class="title is-size-4 mb-2">Quando será o ponto de virada de sua empresa?</h2>
-          <p class="is-size-6 has-text-weight-normal has-text-white mb-4">
-           Metodologia que transforma marcas e resultados.
-          </p>    
+          <h2 class="title is-size-4 mb-2">Você precisa experimentar a comunicação da Abajur.</h2>
+          
           <a href="sobre" class="button is-rounded is-small is-link">
             <span>Saiba mais</span>
           </a>
@@ -27,24 +25,18 @@
     </div>   
   </div>
   <!-- Swiper -->
-  <div class="swiperHeader">
+  <div class="swiperHeader" style="top: 0">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <picture>
-          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-iphone-mobile-1.jpg">
-          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-iphone-desk.jpg" alt="">
-        </picture>
-      </div>
-      <div class="swiper-slide">
-        <picture>
-          <source media="(max-width:580px)" srcset="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-mobile.jpg">
-          <img src="<?php echo get_home_url() ?>/wp-content/uploads/2025/12/abajur-16-anos-site-background-moonwalk-desk.jpg" alt="">
+          <source media="(max-width:580px)" srcset="https://abajurpropaganda.com.br/wp-content/uploads/2026/11/STORIES_Campanha2026_fruki.jpg">
+          <img src="https://abajurpropaganda.com.br/wp-content/uploads/2026/11/Campanha2026_lata.jpg" alt="">
         </picture>
       </div>
     </div>
   </div>
 </header>
-<section id="portfolio" class="section is-medium portfolio-home">
+<section id="portfolio" class="section is-medium portfolio-home" style="padding-top: 60px">
   <div class="container">
     <h2 class="title is-size-4 has-text-white"><?php the_field('texto_portfolio') ?></h2>
     <div class="row">
